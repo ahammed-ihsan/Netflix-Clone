@@ -1,0 +1,10 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.avatar{
+  position: fixed;
+  right: 20px;
+  width: 30px;
+}
