@@ -10,8 +10,8 @@ const Banner = () => {
     useEffect(()=>{
     async function fetch(){
         try{
-            const res = await axios.get(`trending/all/week?api_key=${API_KEY}&language=en-US`)
-            setMovie(res.data.results[4])
+            const res = await axios.get(`trending/all/week?api_key=${API_KEY}&language=en-US`);
+            setMovie(res.data.results[Math.floor(Math.random() *res.data.results.length)])   
         }catch(err){
             console.log('banner',err);
         }
